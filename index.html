@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nkosinathi Dhanda" />
+    <meta name="description" content="Fylo Data Storage Component" />
+    <title>Fylo Data Storage Component</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="main__station">
+        <figure class="logo">
+          <img
+            src="./images/logo.svg"
+            alt="fylo-logo"
+            width="135"
+            height="40"
+          />
+          <figcaption class="offscreen">fylo-logo</figcaption>
+        </figure>
+
+        <section class="station__process-icons">
+          <div class="process-icons__card">
+            <figure>
+              <img
+                src="./images/icon-document.svg"
+                alt="icon-document"
+                width="20"
+                height="24"
+              />
+              <figcaption class="offscreen">icon-document</figcaption>
+            </figure>
+          </div>
+
+          <div class="process-icons__card">
+            <figure>
+              <img
+                src="./images/icon-folder.svg"
+                alt="icon-folder"
+                width="24"
+                height="20"
+              />
+              <figcaption class="offscreen">icon-folder</figcaption>
+            </figure>
+          </div>
+
+          <div class="process-icons__card">
+            <figure>
+              <img
+                src="./images/icon-upload.svg"
+                alt="icon-upload"
+                width="24"
+                height="16"
+              />
+              <figcaption class="offscreen">icon-upload</figcaption>
+            </figure>
+          </div>
+        </section>
+      </section>
+
+      <section class="main__store-stats">
+        <p class="store-stats__message">
+          You've used <span>815 GB</span> of your storage
+        </p>
+
+        <div class="store-stats__status-bar">
+          <div class="status-bar__container">
+            <div class="status-bar__grad-bar">
+              <div class="status-bar__circle"></div>
+            </div>
+          </div>
+
+          <div class="store-stats__range">
+            <p class="range__min">0 GB</p>
+            <p class="range__max">1000 GB</p>
+          </div>
+        </div>
+
+        <div class="store-stats__card-msg">
+          <span class="card-msg__num">185</span>
+          <span class="card-msg__rem nowrap">GB LEFT</span>
+          <div class="triangle"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

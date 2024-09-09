@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BODY-BG: #0f1b3d;
+  /* TYPOGRAPHY */
+  --FF: "Raleway", system-ui;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: var(--BODY-BG);
+}
+
+/* || MAIN-STATION */
+.main {
+  margin: 127px 25px;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.main__station {
+  width: 326px;
+  height: 201px;
+  padding: 40px 108.33px 40px 41.13px;
+  display: flex;
+  flex-flow: column;
+  gap: 33px;
+  background-color: #1e2d69;
+  border-radius: 10px 100px 10px 10px;
+  box-shadow: 0px 75px 100px -30px hsla(0, 0%, 0%, 0.2478);
+}
+
+.main__station .logo img {
+  width: 135.42px;
+  height: auto;
+}
+
+.station__process-icons {
+  display: flex;
+  flex-flow: row;
+  gap: 16.05px;
+  justify-content: left;
+  align-items: center;
+}
+
+.process-icons__card {
+  width: 48.15px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #0c122c;
+  display: grid;
+  place-content: center;
+}
+
+/* || MAIN-STORE-STATS */
+.main__store-stats {
+  width: 326px;
+  height: 160px;
+  position: relative;
+  padding: 32px 32px 52px 32px;
+  border-radius: 10px;
+  background-color: #1e2d69;
+  box-shadow: 0px 75px 100px -30px hsla(0, 0%, 0%, 0.2478);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.store-stats__message {
+  color: #dbd9ff;
+  font: normal 14px var(--FF);
+  margin-bottom: 16px;
+}
+
+.store-stats__message span {
+  font-weight: bold;
+}
+
+.status-bar__container {
+  width: 262px;
+  height: 20px;
+  background-color: #0c122c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 3px 0 3px 3px;
+}
+
+.status-bar__grad-bar {
+  position: relative;
+  background-image: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+  width: 193px;
+  height: 14px;
+  border-radius: 8px;
+}
+
+.status-bar__circle {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.store-stats__range {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.range__min,
+.range__max {
+  font: bold 12px var(--FF);
+  color: #dbd9ff;
+}
+
+.store-stats__card-msg {
+  width: 179px;
+  height: 72px;
+  border-radius: 10px;
+  padding: 16px 24px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  position: absolute;
+  top: 77.5%;
+  background-color: white;
+}
+
+.card-msg__num {
+  font: bold 40px/40px var(--FF);
+  color: #0c122c;
+}
+
+.card-msg__rem {
+  font: bold 12px var(--FF);
+  color: hsla(229, 57%, 11%, 0.5);
+}
