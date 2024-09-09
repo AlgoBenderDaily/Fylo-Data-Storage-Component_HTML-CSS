@@ -158,6 +158,11 @@ body {
   color: #dbd9ff;
 }
 
+.store-stats__abs {
+  position: absolute;
+  top: 77.5%;
+}
+
 .store-stats__card-msg {
   width: 179px;
   height: 72px;
@@ -168,8 +173,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 9px;
-  position: absolute;
-  top: 77.5%;
   background-color: white;
 }
 
@@ -181,4 +184,80 @@ body {
 .card-msg__rem {
   font: bold 12px var(--FF);
   color: hsla(229, 57%, 11%, 0.5);
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 100% 420px;
+    background-position: bottom center;
+  }
+
+  /* || MAIN-STATION */
+  .main {
+    margin: 289px 260px 310px 260px;
+    flex-flow: row;
+    gap: 30px;
+    align-items: flex-end;
+  }
+
+  .main__station {
+    width: 350px;
+    padding: 40px 133px 40px 41px;
+  }
+
+  .main__station .logo img {
+    width: 135px;
+  }
+
+  .station__process-icons {
+    gap: 16px;
+  }
+
+  .process-icons__card {
+    width: 48px;
+  }
+
+  /* || MAIN-STORE-STATS */
+  .main__store-stats {
+    width: 540px;
+    height: 154px;
+    padding: 40px 40px 40px 39px;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .status-bar__container {
+    width: 459px;
+    margin-bottom: 8px;
+  }
+
+  .status-bar__grad-bar {
+    width: 339px;
+  }
+
+  .store-stats__card-msg {
+    width: 179px;
+    height: 72px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-right: 22.66px solid white; /* This forms the base */
+    border-bottom: 22.66px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 70px;
+  }
+
+  .store-stats__abs {
+    position: absolute;
+    top: -47px;
+    right: 40px;
+  }
 }
