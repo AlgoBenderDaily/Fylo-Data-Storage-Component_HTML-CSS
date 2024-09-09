@@ -35,6 +35,10 @@ img {
   text-align: center;
 }
 
+.responsive-image {
+  display: none;
+}
+
 /* MOBILE FIRST DESIGN */
 /* || GENERAL STYLES */
 html {
@@ -259,5 +263,21 @@ body {
     position: absolute;
     top: -47px;
     right: 40px;
+  }
+
+  .process-icons__card:hover,
+  .process-icons__card:focus-visible {
+    background-color: black;
+    background-image: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+  }
+
+  .process-icons__card:hover .responsive-image,
+  .process-icons__card:focus-visible .responsive-image {
+    display: block;
+  }
+
+  .process-icons__card:hover .original,
+  .process-icons__card:focus-visible .original {
+    display: none;
   }
 }
