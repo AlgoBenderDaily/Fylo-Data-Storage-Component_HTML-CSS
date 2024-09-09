@@ -188,9 +188,9 @@ body {
 
 @media screen and (min-width: 992px) {
   body {
-    background-image: url("");
+    background-image: url("./images/bg-desktop.png");
     background-repeat: no-repeat;
-    background-size: 100% 420px;
+    background-size: 100% 50%;
     background-position: bottom center;
   }
 
